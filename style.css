@@ -1,0 +1,70 @@
+:root {
+    --bg: #121212;
+    --card: #1e1e1e;
+    --beast: #39FF14;
+    --potato: #ff4b2b;
+    --gold: #ffd700;
+}
+
+body {
+    background: var(--bg);
+    color: white;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.container { width: 90%; max-width: 400px; text-align: center; z-index: 5; }
+
+.main-card {
+    background: var(--card);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    position: relative;
+}
+
+
+.hidden-media { display: none; }
+
+.show-media {
+    display: block;
+    width: 100%;
+    max-width: 250px;
+    margin: 0 auto 15px auto;
+    border-radius: 12px;
+}
+
+
+.beast-wow-effect {
+    border: 4px solid var(--gold);
+    box-shadow: 0 0 25px var(--gold);
+    animation: pulse 0.8s infinite alternate;
+}
+
+@keyframes pulse {
+    from { transform: scale(1); } to { transform: scale(1.05); }
+}
+
+
+.dim-effect {
+    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0,0,0,0.92); z-index: 10; opacity: 0; pointer-events: none;
+    transition: 0.5s;
+}
+.dim-active { opacity: 1; }
+
+.button-group { display: flex; flex-direction: column; gap: 15px; transition: 0.5s; }
+.fade-out { opacity: 0; pointer-events: none; transform: translateY(10px); }
+
+.btn { padding: 15px; border: none; border-radius: 10px; font-weight: bold; cursor: pointer; font-size: 1rem; }
+#beast-btn { background: var(--beast); color: black; }
+#potato-btn { background: var(--potato); color: white; }
+
+.task-box { margin-top: 15px; padding: 15px; border: 2px dashed var(--beast); border-radius: 10px; background: rgba(57, 255, 20, 0.05); }
+.done-btn { background: var(--beast); border: none; padding: 10px 20px; border-radius: 5px; font-weight: bold; cursor: pointer; margin-top: 10px; }
+.hidden { display: none; }

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Roaster | Beast vs Potato</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="overlay" class="dim-effect"></div>
+
+    <div class="container">
+        <header>
+            <h1>GYM ROASTER 🧠💪</h1>
+            <div class="streak-card">
+                <p>Streak: <span id="streak-count">0</span> Days 🔥</p>
+            </div>
+        </header>
+
+        <main class="main-card">
+            <div id="media-container">
+                <img id="display-meme" src="" class="hidden-media" alt="Meme">
+            </div>
+
+            <h2 id="question">Innikki Gym Poniya?</h2>
+            
+            <div id="btn-group" class="button-group">
+                <button id="beast-btn" class="btn">POYITEN! 🔥</button>
+                <button id="potato-btn" class="btn">LAZY-AH IRUKEN 🥔</button>
+            </div>
+
+            <div id="response-area" class="hidden">
+                <p id="message"></p>
+                <div id="task-container" class="task-box hidden">
+                    <h4 id="task-text"></h4>
+                    <button id="done-task-btn" class="done-btn">DONE! ✅</button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
