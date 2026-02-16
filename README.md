@@ -1,5 +1,5 @@
 ## Beast-Roaster
-   A fun motivation app to track your gym consistency with memes, roasts, and streaks!
+      A fun motivation app to track your gym consistency with memes, roasts, and streaks!
 
 ## Features
    * Beast Mode: Mass memes, tasks, and audio for gym-goers.
